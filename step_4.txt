@@ -1,0 +1,29 @@
+#thêm plugin
+	#Các bạn đã cài plugin rồi thi copy lệnh sau:
+	Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+	bỏ vào dữa phần call plug#begin và call plug#end()
+
+	#Bạn nào mà muốn tùy chỉnh vim như mình thì chỉ cần copy file .vimrc ra thư mục home là dc
+#Cài đặt plugin:
+Vào file .vimrc bật chế độ normal và gõ lệnh :w rồi gõ tếp :source % rồi gõ tiếp :PlugInstall
+-------------------------------------------------------------------------------------------------------------------------------
+#Config languageserver
+Vẫn tại file .vimrc các bạn bật chế độ normal rồi nhập :CocConfig .Rồi paste phần này vào:
+	{
+	"languageserver": {
+	  "ccls": {
+	    "command": "ccls",
+	    "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
+	    "rootPatterns": [".ccls", "compile_commands.json", ".git/", ".hg/"],
+	    "initializationOptions": {
+		"cache": {
+		  "directory": "/tmp/ccls"
+		}
+	      }
+	  }
+	}
+	}
+	
+
+
+
