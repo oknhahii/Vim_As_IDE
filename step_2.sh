@@ -8,4 +8,5 @@
 #nvm alias default 16.8.0
 #nvm install lts/fermium
 sudo apt remove cmdtest
-npm install --global yarn
+sudo npm install --global yarn
+
